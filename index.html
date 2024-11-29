@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <nav class="navbar">
+        <a href="#" onclick="navigateTo('/home')">Home</a>
+        <a href="#" onclick="navigateTo('/about')">About</a>
+        <a href="#" onclick="navigateTo('/contact')">Contact</a>
+      </nav>
+      <div id="content">
+        <h2>Registration Page</h2>
+      </div>
+    </div>
+    <div class="container">
+      <div class="form-container">
+        <h2>User Registration</h2>
+        <form id="registrationForm">
+          <!-- First Name -->
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="Enter your first name"
+              required
+            />
+          </div>
+
+          <!-- Last Name -->
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Enter your last name"
+              required
+            />
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <!-- Phone Number -->
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Enter your phone number"
+              required
+            />
+          </div>
+
+          <!-- Address -->
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              placeholder="Enter your address"
+              required
+            />
+          </div>
+
+          <!-- Gender -->
+          <div class="form-group">
+            <label>Gender</label>
+            <div class="gender-options">
+              <div class="form-check">
+                <input
+                  type="radio"
+                  id="male"
+                  name="gender"
+                  value="Male"
+                  class="form-check-input"
+                  required
+                />
+                <label for="male" class="form-check-label">Male</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  id="female"
+                  name="gender"
+                  value="Female"
+                  class="form-check-input"
+                  required
+                />
+                <label for="female" class="form-check-label">Female</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="radio"
+                  id="other"
+                  name="gender"
+                  value="Other"
+                  class="form-check-input"
+                  required
+                />
+                <label for="other" class="form-check-label">Other</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Date of Birth -->
+          <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required />
+          </div>
+
+          <!-- Password -->
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Create a password"
+              required
+            />
+            <progress id="passwordStrength" max="100" value="0"></progress>
+            <small id="passwordFeedback"></small>
+          </div>
+
+          <!-- Additional Information -->
+          <div class="form-group">
+            <label for="additionalInfo">Additional Information</label>
+            <textarea
+              id="additionalInfo"
+              name="additionalInfo"
+              rows="4"
+              placeholder="Tell us something about yourself"
+            ></textarea>
+          </div>
+
+          <!-- File Upload -->
+          <div class="form-group">
+            <label for="profilePicture">Upload Profile Picture</label>
+            <input
+              type="file"
+              id="profilePicture"
+              name="profilePicture"
+              accept="image/*"
+            />
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
